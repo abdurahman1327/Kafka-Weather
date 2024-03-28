@@ -22,4 +22,4 @@ I am going to use different technologies such as Python, Amazon Web Services (AW
 ## Dataset Used
 I decided to use Weather API, but I was mainly interested in operation side for this project(building data pipeline).
 
-Here is the dataset used in the video 
+
