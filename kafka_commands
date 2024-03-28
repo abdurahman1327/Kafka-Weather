@@ -10,6 +10,9 @@ sudo dnf install java-11-amazon-corretto -y
 java -version
 cd kafka_2.13-3.7.0
 
+It is pointing to private server , change server.properties so that it can run in public IP 
+
+Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance
 
 Start Zoo-keeper:
 -------------------------------
@@ -26,10 +29,6 @@ export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
 cd kafka_2.13-3.7.0
 bin/kafka-server-start.sh config/server.properties
 
-It is pointing to private server , change server.properties so that it can run in public IP 
-
-To do this , you can follow any of the 2 approaches shared belwo --
-Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance
 
 
 Create the topic:
