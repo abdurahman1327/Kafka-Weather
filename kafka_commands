@@ -7,6 +7,7 @@ tar -xvf kafka_2.13-3.7.0.tgz
 -----------------------
 java -version
 sudo dnf install java-11-amazon-corretto -y
+sudo yum install java-1.8.0-openjdk
 java -version
 cd kafka_2.13-3.7.0
 
